@@ -69,7 +69,7 @@ namespace SimpleWpf
 
             DisplayControl.Initialize(new SpiConfiguration(), new ScreenConfiguration());
 #elif M5CORE2
-            M5Core2.InitializeScreen();
+            M5Core2.InitializeScreen(1024*1024*4);
 #else
             throw new System.Exception("Unknown button and/or display mapping!");
 #endif
